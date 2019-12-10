@@ -34,3 +34,96 @@ http.createServer(function(request,response){
 node xxx.js //启动静态服务器
 ```
 
+# 创建server.js是如何把我们写的东西展现到服务器上的？
+
+## path模块
+
+`Node.js path模块`提供了一些用于处理问价路径的小工具，我们可以通过以下方式引入该模块。
+```
+var path = require('path')
+path.join([path1][,payh2][,...])
+```
+用于连接路径。该方法的主要用途在于：会正确使用当前系统的路径分隔符，`Unix系统是"/"`,`Windows系统是"\"`。
+```
+path.join(__dirname, 'static')
+//__dirname代表当前的目录文件,static当前文件夹名
+//path.join(__dirname, 'static')会自动生成当前文件的绝对路径
+```
+
+## fs模块（Node.js文件系统）
+
+此模块中的方法均有异步和同步版本，例如读取文件内容的函数有异步的`fs.readFile()`和同步的`fs.readFileSync()`。
+
+**静态服务器的原理**
+- 当用户访问一个地址为`localhost:8080/index.html`，我们怎么样才能让用户看到我们的文件呢？
+- 我们可以通过函数参数`request`得到这个`url`。
+- 得到`url`以后，我们只要在本地找到对应的文件就可以了。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
