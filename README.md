@@ -60,7 +60,9 @@ path.join(__dirname, 'static')
 - 得到`url`以后，我们只要在本地找到对应的文件就可以了。
 
 
+## 如何使用node.js来mock数据
 
+**请看node.js**
 
 
 
