@@ -38,7 +38,7 @@ node xxx.js //启动静态服务器
 
 ## path模块
 
-`Node.js path模块`提供了一些用于处理问价路径的小工具，我们可以通过以下方式引入该模块。
+`Node.js path模块`提供了一些用于处理路径的小工具，我们可以通过以下方式引入该模块。
 ```
 var path = require('path')
 path.join([path1][,payh2][,...])
